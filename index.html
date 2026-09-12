@@ -356,7 +356,6 @@ const matchCat=(it,f)=>f==="all"||it.type===f;
 
 function rowHTML(it,rank){const w=it.status==="seen";
  return `<div class="row" data-open="${it.id}">${rank?`<div class="rank-n">${rank}</div>`:""}
-  <div class="acc" style="background:${accent(it)}"></div>
   <div class="info"><div class="rn">${it.title}</div><div class="rm">${metaLine(it)}${w&&it.times>1?` · ×${it.times}`:""}</div></div>
   ${w?`<div class="rr">${it.rating.toFixed(1)}</div>`:""}</div>`;}
 
